@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry DOM Project</title>
+    <link rel="shortcut icon" href="./images/triangle.png" type="image/x-icon">
+    <!-- daisy and tailwind conbo start  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy and tailwind conbo end -->
+     <!-- ext css link stt -->
+      <link rel="stylesheet" href="style.css">
+     <!-- ext css link end -->
+</head>
+<body class="m-4">
+    <!-- header start  -->
+    <header>
+
+    </header>
+<!-- header end  -->
+
+<!-- main start  -->
+    <main>
+        <!-- main div stt -->
+         <div class="flex">
+            <!-- card div stt -->
+             <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-2">
+                <!-- daisy cp paste cart stt -->
+                <div id="mouse-over-effect" class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="p-2" src="./images/triangle.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center font-bold text-2xl">Triangle</h2>
+                      <p class="text-center">Area(A) = 0.5 X b X h</p>
+                      <div class="text-center">
+                        <input id="inputBase" class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input id="inputHeight" class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="h">
+                        <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-center mt-4">
+                        <button onclick="CalculateTriangle()"  class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="p-2" src="./images/rectangle.png" alt="rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center font-bold text-2xl">Triangle</h2>
+                      <p class="text-center">Area(A) = 0.5 X b X h</p>
+                      <div class="text-center">
+                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="h">
+                        <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-center mt-4">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="p-2" src="./images/parallelogram.png" alt="parallelogram" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center font-bold text-2xl">Triangle</h2>
+                      <p class="text-center">Area(A) = 0.5 X b X h</p>
+                      <div class="text-center">
+                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="h">
+                        <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-center mt-4">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- daisy cp paste cart end -->
+             </div>
+            <!-- card div end -->
+
+            <!-- calculate area div stt  -->
+             <div class="h-[454px] w-[330px] border-solid border-2 border-black text-center">
+                <h1 class="font-bold underline">Area Calculation</h1>
+             </div>
+            <!-- calculate area div end -->
+         </div>
+        <!-- main div end -->
+    </main>
+<!-- main end  -->
+
+<!-- footer start  -->
+    <footer>
+
+    </footer>
+<!-- footer end  -->
+
+<!-- linking js ext file  -->
+<script src="./script.js"></script>
+<!-- end  -->
+</body>
+</html>
