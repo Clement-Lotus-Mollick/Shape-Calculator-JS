@@ -22,6 +22,7 @@
 
 <!-- main start  -->
     <main>
+      <h1 class="text-3xl text-center font-semibold my-4">Calculate Your Shape</h1>
         <!-- main div stt -->
          <div class="flex">
             <!-- card div stt -->
@@ -43,35 +44,35 @@
                       </div>
                     </div>
                   </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div id="mouse-over-effect2" class="card w-96 bg-base-100 shadow-xl">
                     <figure><img class="p-2" src="./images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
-                      <h2 class="text-center font-bold text-2xl">Triangle</h2>
-                      <p class="text-center">Area(A) = 0.5 X b X h</p>
+                      <h2 class="text-center font-bold text-2xl">Rectangle</h2>
+                      <p class="text-center">Area(A) = L X W</p>
                       <div class="text-center">
-                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="b">
+                        <input id="inputLength" class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="L">
                         <span>cm</span>
-                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="h">
+                        <input id="inputWidth" class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="W">
                         <span>cm</span>
                       </div>
                       <div class="card-actions justify-center mt-4">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick=" CalculateRectangle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div id="mouse-over-effect3" class="card w-96 bg-base-100 shadow-xl">
                     <figure><img class="p-2" src="./images/parallelogram.png" alt="parallelogram" /></figure>
                     <div class="card-body">
-                      <h2 class="text-center font-bold text-2xl">Triangle</h2>
-                      <p class="text-center">Area(A) = 0.5 X b X h</p>
+                      <h2 class="text-center font-bold text-2xl">Parallelogram</h2>
+                      <p class="text-center">Area(A) = b X h</p>
                       <div class="text-center">
-                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="b">
+                        <input id="ParaBase" class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="b">
                         <span>cm</span>
-                        <input class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="h">
+                        <input id="ParaHeight" class="bg-[#F1F1F1] w-[95px] h-[32px] font-bold p-2" type="text" placeholder="h">
                         <span>cm</span>
                       </div>
                       <div class="card-actions justify-center mt-4">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="ParaClick" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -80,8 +81,8 @@
             <!-- card div end -->
 
             <!-- calculate area div stt  -->
-             <div class="h-[454px] w-[330px] border-solid border-2 border-black text-center">
-                <h1 class="font-bold underline">Area Calculation</h1>
+             <div id="theDispFinal" class="h-[454px] w-[330px] border-solid border-2 border-black text-center">
+                <h1 class="font-bold underline mb-4">Area Calculation</h1>
              </div>
             <!-- calculate area div end -->
          </div>
@@ -90,8 +91,8 @@
 <!-- main end  -->
 
 <!-- footer start  -->
-    <footer>
-
+    <footer class="flex items-end justify-center h-[150px]">
+      <p>© Copyright CLMH code 2024 github</p>
     </footer>
 <!-- footer end  -->
 
